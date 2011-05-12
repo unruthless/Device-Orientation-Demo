@@ -49,7 +49,7 @@
               document.getElementById('shield').style.webkitTransform = 'rotate(' + rotate + 'deg)' + 'scale(' + scale + ')';
           }
           
-          window.addEventListener('deviceorientation', itsDangerousToGoAlone);
+          window.addEventListener('deviceorientation', itsDangerousToGoAlone, false);
       }
       else {
           alert("Geolocation is not supported on your device.");
